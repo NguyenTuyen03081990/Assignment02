@@ -1,19 +1,48 @@
 * {
-    margin: 0px;
+  margin: 0px;
 }
 
 .bg-grey {
-    background: #f7f7f7;
+  background: #f7f7f7;
 }
 
-section > .container{
-    width: 1170px;
-    margin: auto;
-    display: block;
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
 
-    padding: 30px 50px;
+  padding: 30px 50px;
 }
 
 #nav-bar {
-    text-align: center;
+  text-align: center;
+}
+
+/* chỉnh sửa cho ảnh img banner */
+/* căn giữa ảnh img banner */
+/* đặt vị trí cho img thành vị trí tương đối */
+
+#banner-area {
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+
+/* div chứa hình ảnh và văn bản */
+
+#baner {
+  background: url(../images/banner.jpg) no-repeat center;
+  position: relative;
+  text-align: center;
+  color: #f7f7f7;
+}
+
+/* di chuyển phân tử con h1 của id = "banner" ra giữa khối chứa container */
+
+#baner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
